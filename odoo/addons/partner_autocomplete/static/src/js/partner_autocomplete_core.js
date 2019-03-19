@@ -37,7 +37,7 @@ return {
         });
 
         var concatResults = function () {
-            // Add Clearbit result with Odoo result (with unique domain)
+            // Add Clearbit result with ImRetail result (with unique domain)
             if (clearbitSuggestions && clearbitSuggestions.length) {
                 var websites = odooSuggestions.map(function (suggestion) {
                     return suggestion.website;
@@ -222,7 +222,7 @@ return {
     },
 
     /**
-     * Use Odoo Autocomplete API to return suggestions
+     * Use ImRetail Autocomplete API to return suggestions
      *
      * @param {string} value
      * @param {boolean} isVAT

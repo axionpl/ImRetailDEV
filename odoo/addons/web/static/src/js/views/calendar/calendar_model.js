@@ -386,7 +386,7 @@ return AbstractModel.extend({
      */
     _getFullCalendarOptions: function () {
         var week_start = _t.database.parameters.week_start || 0;
-        // calendar uses index 0 for Sunday but Odoo stores it as 7
+        // calendar uses index 0 for Sunday but ImRetail stores it as 7
         week_start = week_start % 7;
         return {
             defaultView: (this.mode === "month")? "month" : ((this.mode === "week")? "agendaWeek" : ((this.mode === "day")? "agendaDay" : "agendaWeek")),

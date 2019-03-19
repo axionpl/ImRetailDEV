@@ -36,7 +36,8 @@
         <field name="seats_max">500</field>
         <field name="address_id" ref="base.res_partner_1"/>
         <field name="event_type_id" ref="event_type_1"/>
-        <field name="description"><![CDATA[
+        <field name="description">
+      <![CDATA[
 <div class="oe_structure">
     <center><strong>Join us to our main event of the year: the Design Fair</strong></center>
     <p>&nbsp;</p>
@@ -54,8 +55,8 @@
     <p><strong>Program:</strong></p>
     <p>Conferences, workshops and trainings will be organized in 6 rooms:</p>
     <ul>
-    <li>2 technical rooms: one dedicated to advanced Odoo developers, one for new developers.</li>
-    <li>2 technical rooms: one dedicated to advanced Odoo developers, one for new developers.</li>
+    <li>2 technical rooms: one dedicated to advanced ImRetail developers, one for new developers.</li>
+    <li>2 technical rooms: one dedicated to advanced ImRetail developers, one for new developers.</li>
     <li>1 business room: to discuss implementation methodologies, best sales practices, etc.</li>
     <li>1 workshop room: mainly for developers.</li>
     </ul>

@@ -36,14 +36,14 @@ QUnit.module('fields', {
         assert.ok(form.$('.o_sms_count').length, "Should have a sms counter");
         assert.strictEqual(form.$('.o_sms_count').text(), '0 chars, fits in 0 SMS (GSM7) ', 'Should be "0 chars, fits in 0 SMS (GSM7) " by default');
         // GSM-7
-        form.$('.o_input').val("Hello from Odoo").trigger('input');
-        assert.strictEqual(form.$('.o_sms_count').text(), '15 chars, fits in 1 SMS (GSM7) ', 'Should be "15 chars, fits in 1 SMS (GSM7) " for "Hello from Odoo"');
+        form.$('.o_input').val("Hello from ImRetail").trigger('input');
+        assert.strictEqual(form.$('.o_sms_count').text(), '15 chars, fits in 1 SMS (GSM7) ', 'Should be "15 chars, fits in 1 SMS (GSM7) " for "Hello from ImRetail"');
         // GSM-7 with \n => this one count as 2 characters
-        form.$('.o_input').val("Hello from Odoo\n").trigger('input');
-        assert.strictEqual(form.$('.o_sms_count').text(), '17 chars, fits in 1 SMS (GSM7) ', 'Should be "17 chars, fits in 1 SMS (GSM7) " for "Hello from Odoo\\n"');
+        form.$('.o_input').val("Hello from ImRetail\n").trigger('input');
+        assert.strictEqual(form.$('.o_sms_count').text(), '17 chars, fits in 1 SMS (GSM7) ', 'Should be "17 chars, fits in 1 SMS (GSM7) " for "Hello fromImRetail\\n"');
         // Unicode => ê
-        form.$('.o_input').val("Hêllo from Odoo").trigger('input');
-        assert.strictEqual(form.$('.o_sms_count').text(), '15 chars, fits in 1 SMS (UNICODE) ', 'Should be "15 chars, fits in 1 SMS (UNICODE) " for "Hêllo from Odoo"');
+        form.$('.o_input').val("Hêllo from ImRetail").trigger('input');
+        assert.strictEqual(form.$('.o_sms_count').text(), '15 chars, fits in 1 SMS (UNICODE) ', 'Should be "15 chars, fits in 1 SMS (UNICODE) " for "Hêllo from ImRetail"');
         // GSM-7 with 160c
         var text = Array(161).join('a');
         form.$('.o_input').val(text).trigger('input');

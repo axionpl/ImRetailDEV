@@ -59,10 +59,10 @@ return MessagingMenu.include({
         this.call('mailbot_service', 'removeRequest');
         if (value !== 'granted') {
             this.call('bus_service', 'sendNotification', _t('Permission denied'),
-                _t('Odoo will not have the permission to send native notifications on this device.'));
+                _t('ImRetail will not have the permission to send native notifications on this device.'));
         } else {
             this.call('bus_service', 'sendNotification', _t('Yay, push notifications are enabled!'),
-                _t('Odoo has now the permission to send you native notifications on this device.'));
+                _t('ImRetail has now the permission to send you native notifications on this device.'));
         }
         this._updateCounter();
     },

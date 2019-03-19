@@ -761,7 +761,7 @@ var BasicRenderer = AbstractRenderer.extend({
     /**
      * When someone presses the TAB/UP/DOWN/... key in a widget, it is nice to
      * be able to navigate in the view (default browser behaviors are disabled
-     * by Odoo).
+     * by ImRetail).
      *
      * @abstract
      * @private

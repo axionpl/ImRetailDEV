@@ -95,7 +95,7 @@ function removeSrcAttribute(el, widget) {
  *   date. It is given to the mock server.
  * @param {Object} params.data the data given to the created mock server. It is
  *   used to generate mock answers for every kind of routes supported by odoo
- * @param {number} [params.debug] if set to true, logs RPCs and uncaught Odoo
+ * @param {number} [params.debug] if set to true, logs RPCs and uncaught ImRetail
  *   events.
  * @param {function} [params.mockRPC] a function that will be used to override
  *   the _performRpc method from the mock server. It is really useful to add
@@ -297,7 +297,7 @@ function addMockEnvironment(widget, params) {
         event.data.on_success([]);
     });
 
-    // make sure all Odoo events bubbling up are intercepted
+    // make sure all ImRetail events bubbling up are intercepted
     if ('intercepts' in params) {
         _.each(params.intercepts, function (cb, name) {
             intercept(widget, name, cb);
@@ -363,7 +363,7 @@ function fieldsViewGet(server, params) {
  * It will not be propagated further, and even the handlers on the target will
  * not fire.
  *
- * @param {Widget} widget the target widget (any Odoo widget)
+ * @param {Widget} widget the target widget (any ImRetail widget)
  * @param {string} eventName description of the event
  * @param {function} fn callback executed when the even is intercepted
  * @param {boolean} [propagate=false]

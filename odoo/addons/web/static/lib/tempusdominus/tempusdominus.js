@@ -785,7 +785,7 @@ var DateTimePicker = function ($, moment) {
         };
 
         DateTimePicker.prototype._getLastPickedDate = function _getLastPickedDate() {
-            return this._dates[this._getLastPickedDateIndex()] || this.getMoment(); // FIXME changed by Odoo
+            return this._dates[this._getLastPickedDateIndex()] || this.getMoment(); // FIXME changed by ImRetail
         };
 
         DateTimePicker.prototype._getLastPickedDateIndex = function _getLastPickedDateIndex() {

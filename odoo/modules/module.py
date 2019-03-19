@@ -67,7 +67,7 @@ class AddonsHook(object):
         new_mod.__loader__ = self
 
         # module top-level can only be a package
-        assert type_ == imp.PKG_DIRECTORY, "Odoo addon top-level must be a package"
+        assert type_ == imp.PKG_DIRECTORY, "ImRetail addon top-level must be a package"
         modfile = opj(path, '__init__.py')
         new_mod.__file__ = modfile
         new_mod.__path__ = [path]
@@ -309,7 +309,7 @@ def load_information_from_description_file(module, mod_path=None):
         # default values for descriptor
         info = {
             'application': False,
-            'author': 'Odoo S.A.',
+            'author': 'ImRetail',
             'auto_install': False,
             'category': 'Uncategorized',
             'depends': [],

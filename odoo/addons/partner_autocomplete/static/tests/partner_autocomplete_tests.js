@@ -39,7 +39,7 @@ odoo.define('partner_autocomplete.tests', function (require) {
     QUnit.module('partner_autocomplete', {
         before: function () {
             var suggestions = [
-                {name: "Odoo", website: "odoo.com", domain: "odoo.com", logo: "odoo.com/logo.png", vat: "BE0477472701"}
+                {name: "ImRetail", website: "odoo.com", domain: "odoo.com", logo: "odoo.com/logo.png", vat: "BE0477472701"}
             ];
 
             var enrich_data = {
@@ -47,7 +47,7 @@ odoo.define('partner_autocomplete.tests', function (require) {
                 state_id: false,
                 partner_gid: 1,
                 website: "odoo.com",
-                comment: "Comment on Odoo",
+                comment: "Comment on ImRetail",
                 street: "40 Chaussée de Namur",
                 city: "Ramillies",
                 zip: "1367",
@@ -220,7 +220,7 @@ odoo.define('partner_autocomplete.tests', function (require) {
 
             $dropdown.find("a").first().click();
             $input = form.$(".o_field_partner_autocomplete > input");
-            assert.strictEqual($input.val(), "Odoo", "Input value should have been updated to \"Odoo\"");
+            assert.strictEqual($input.val(), "ImRetail", "Input value should have been updated to \"ImRetail\"");
             assert.strictEqual(form.$("input.o_field_widget").val(), "odoo.com", "website value should have been updated to \"odoo.com\"");
 
             _compareResultFields(assert, form, fields, AutocompleteCore._createData);
@@ -307,7 +307,7 @@ odoo.define('partner_autocomplete.tests', function (require) {
             $dropdown.find("a").first().click();
 
             $input = form.$(".o_field_partner_autocomplete > input");
-            assert.strictEqual($input.val(), "Odoo", "Input value should have been updated to \"Odoo\"");
+            assert.strictEqual($input.val(), "ImRetail", "Input value should have been updated to \"ImRetail\"");
 
             _compareResultFields(assert, form, fields, AutocompleteCore._createData);
 
@@ -321,7 +321,7 @@ odoo.define('partner_autocomplete.tests', function (require) {
             $dropdown.find("a").first().click();
 
             $input = form.$(".o_field_partner_autocomplete > input");
-            assert.strictEqual($input.val(), "Odoo", "Input value should have been updated to \"Odoo\"");
+            assert.strictEqual($input.val(), "ImRetail", "Input value should have been updated to \"ImRetail\"");
 
             _compareResultFields(assert, form, fields, AutocompleteCore._createData);
 

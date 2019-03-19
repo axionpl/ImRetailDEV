@@ -28,7 +28,7 @@ var Dialog = Widget.extend({
     /**
      * @param {Widget} parent
      * @param {Object} [options]
-     * @param {string} [options.title=Odoo]
+     * @param {string} [options.title=ImRetail]
      * @param {string} [options.subtitle]
      * @param {string} [options.size=large] - 'large', 'medium' or 'small'
      * @param {boolean} [options.fullscreen=false] - whether or not the dialog
@@ -56,7 +56,7 @@ var Dialog = Widget.extend({
         this._opened = $.Deferred();
 
         options = _.defaults(options || {}, {
-            title: _t('Odoo'), subtitle: '',
+            title: _t('ImRetail'), subtitle: '',
             size: 'large',
             fullscreen: false,
             dialogClass: '',

@@ -8,7 +8,7 @@ var core = require('web.core');
 var _t = core._t;
 
 /**
- * Mailboxes, called "static channels" in earlier version of Odoo, are threads
+ * Mailboxes, called "static channels" in earlier version of ImRetail, are threads
  * that are not represented on the server. We can see them as "threads that are
  * not conversations". For instance, the well-known "Inbox" folder contains a
  * list of messages, but the inbox does not represent a conversation: Inbox is

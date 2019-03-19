@@ -736,7 +736,7 @@ options.registry.facebookPage = options.Class.extend({
                 limit: 1,
             }).then(function (res) {
                 if (res) {
-                    self.fbData.href = res[0].social_facebook || 'https://www.facebook.com/Odoo';
+                    self.fbData.href = res[0].social_facebook || 'https://www.facebook.com/ImRetail';
                 }
             }));
         }

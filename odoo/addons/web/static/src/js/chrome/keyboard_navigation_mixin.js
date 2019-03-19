@@ -3,24 +3,24 @@ odoo.define('web.KeyboardNavigationMixin', function (require) {
     var BrowserDetection = require('web.BrowserDetection');
 
     /**
-     * list of the key that should not be used as accesskeys. Either because we want to reserve them for a specific behavior in Odoo or
+     * list of the key that should not be used as accesskeys. Either because we want to reserve them for a specific behavior in ImRetail or
      * because they will not work in certain browser/OS
      */
     var knownUnusableAccessKeys = [' ',
-        'A', // reserved for Odoo Edit
-        'C', // reserved for Odoo Create
-        'H', // reserved for Odoo Home
-        'J', // reserved for Odoo Discard
-        'K', // reserved for Odoo Kanban view
-        'L', // reserved for Odoo List view
-        'N', // reserved for Odoo pager Next
-        'P', // reserved for Odoo pager Previous
-        'S', // reserved for Odoo Save
-        'Q', // reserved for Odoo Search
+        'A', // reserved for ImRetail Edit
+        'C', // reserved for ImRetail Create
+        'H', // reserved for ImRetail Home
+        'J', // reserved for ImRetail Discard
+        'K', // reserved for ImRetail Kanban view
+        'L', // reserved for ImRetail List view
+        'N', // reserved for ImRetail pager Next
+        'P', // reserved for ImRetail pager Previous
+        'S', // reserved for ImRetail Save
+        'Q', // reserved for ImRetail Search
         'E', // chrome does not support 'E' access key --> go to address bar to search google
         'F', // chrome does not support 'F' access key --> go to menu
         'D', // chrome does not support 'D' access key --> go to address bar
-        '0', '1', '2', '3', '4', '5', '6', '7', '8', '9' // reserved for Odoo menus
+        '0', '1', '2', '3', '4', '5', '6', '7', '8', '9' // reserved for ImRetail menus
     ];
 
     var KeyboardNavigationMixin = {

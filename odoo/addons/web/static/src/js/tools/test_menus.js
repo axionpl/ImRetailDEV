@@ -55,12 +55,12 @@
         // finding applications menus
         var $listOfAppMenuItems;
         if (isEnterprise) {
-            console.log("Odoo flavor: Enterprise")
+            console.log("ImRetail flavor: Enterprise")
             var $homeMenu = $("nav.o_main_navbar > a.o_menu_toggle.fa-th");
             $homeMenu.click()
             $listOfAppMenuItems = $(".o_app, .o_menuitem")
         } else {
-            console.log("Odoo flavor: Community")
+            console.log("ImRetail flavor: Community")
             $listOfAppMenuItems = $('a.o_app');
         }
         console.log('Found ', $listOfAppMenuItems.length, 'apps to test');
