@@ -1,0 +1,15 @@
+{
+  "ExpandedNodes": [
+    "",
+    "\\odoo",
+    "\\odoo\\addons\\web",
+    "\\odoo\\addons\\website",
+    "\\odoo\\addons\\website\\static",
+    "\\odoo\\addons\\website\\static\\src",
+    "\\odoo\\addons\\website\\static\\src\\js",
+    "\\odoo\\addons\\website\\static\\src\\js\\menu",
+    "\\odoo\\addons\\website\\static\\src\\scss"
+  ],
+  "SelectedNode": "\\odoo\\fields.py",
+  "PreviewInSolutionExplorer": false
+}
