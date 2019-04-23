@@ -1885,6 +1885,7 @@ td {
 }
 .pos .order .orderline .price{
     padding:0;
+    padding-top: 15px;
     font-weight: bold;
     float:right;
 }

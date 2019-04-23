@@ -1419,7 +1419,7 @@ exports.Orderline = Backbone.Model.extend({
         if(quantity === 'remove'){
             this.order.remove_orderline(this);
             return;
-        }else{
+        } else {
             var quant = parseFloat(quantity) || 0;
             var unit = this.get_unit();
             if(unit){
@@ -1446,11 +1446,12 @@ exports.Orderline = Backbone.Model.extend({
         this.trigger('change', this);
     },
     // return the quantity of product
-    get_quantity: function(){
+    get_quantity: function () {
         return this.quantity;
     },
-    get_quantity_str: function(){
-        return this.quantityStr;
+    get_quantity_str: function () {
+        var amount_quantit = this.quantity
+        return amount_quantit;
     },
     get_quantity_str_with_unit: function(){
         var unit = this.get_unit();
@@ -1629,7 +1630,7 @@ exports.Orderline = Backbone.Model.extend({
             var quantity = this.quantity;
             this.quantity = 1.0;
             var price = this.get_all_prices().priceWithTax;
-            this.quantity = quantity;
+            this.quantity = quantity.toFixed(2);
             return price;
         } else {
             return this.get_unit_price();
