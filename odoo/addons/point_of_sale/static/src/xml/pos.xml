@@ -1213,10 +1213,14 @@
             <ul class="info-list">
                 <t t-if="line.get_quantity_str() !== '1' || line.selected ">
                     <li class="info">
-                        <em>
+                      
+                        <button>+</button>
+                         <em>
                             <t t-esc="line.get_quantity_str()" />
                         </em>
                         sztuka/i
+                       
+                        <button>-</button>
                     </li>
                 </t>
                 <t t-if="line.get_discount_str() !== '0'">
@@ -1247,8 +1251,8 @@
                         <div class="summary clearfix">
                             <div class="line">
                                 <div class='entry total'>
-                                    <span class="badge">Total: </span> <span class="value">0.00 €</span>
-                                    <div class='subentry'>Podatek: <span class="value"></span></div>
+                                    <span class="badge">Suma: </span> <span class="value">0.00 €</span>
+                                    <div class='subentry'>W tym VAT: <span class="value"></span></div>
                                 </div>
                             </div>
                         </div>
