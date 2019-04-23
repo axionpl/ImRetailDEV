@@ -642,6 +642,7 @@ td {
     border-color: #bfbfbf;
     border-top-left-radius: 4px;
     border-bottom-left-radius: 4px;
+    margin-left: 28px;
 }
 .pos .actionpad .button {
     position: relative;
