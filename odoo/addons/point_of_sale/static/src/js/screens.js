@@ -1629,7 +1629,8 @@ var ReceiptScreenWidget = ScreenWidget.extend({
     click_next: function() {
         this.pos.get_order().finalize();
     },
-    click_back: function() {
+    click_back: function () {
+        this.gui.show_screen('products');
         // Placeholder method for ReceiptScreen extensions that
         // can go back ...
     },
