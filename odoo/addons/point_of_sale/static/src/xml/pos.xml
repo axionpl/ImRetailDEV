@@ -460,7 +460,7 @@
     </t>
 
     <t t-name="PaymentScreen-Paymentlines">
-        <t t-if="!paymentlines.length">
+        
             <div class='paymentlines-empty'>
                 <div class='total'>
                     <t t-esc="widget.format_currency(order.get_total_with_tax())"/>
@@ -469,7 +469,7 @@
                     Wybierz metodę płatności.
                 </div>
             </div>
-        </t>
+        
 
         <t t-if="paymentlines.length">
             
@@ -478,29 +478,7 @@
     </t>
 
     <t t-name="PaymentScreen-Numpad">
-        <div class="numpad">
-            <button class="input-button number-char" data-action='1'>1</button>
-            <button class="input-button number-char" data-action='2'>2</button>
-            <button class="input-button number-char" data-action='3'>3</button>
-            <button class="mode-button" data-action='+10'>+10</button>
-            <br />
-            <button class="input-button number-char" data-action='4'>4</button>
-            <button class="input-button number-char" data-action='5'>5</button>
-            <button class="input-button number-char" data-action='6'>6</button>
-            <button class="mode-button" data-action='+20'>+20</button>
-            <br />
-            <button class="input-button number-char" data-action='7'>7</button>
-            <button class="input-button number-char" data-action='8'>8</button>
-            <button class="input-button number-char" data-action='9'>9</button>
-            <button class="mode-button" data-action='+50'>+50</button>
-            <br />
-            <button class="input-button numpad-char" data-action='CLEAR' >C</button>
-            <button class="input-button number-char" data-action='0'>0</button>
-            <button class="input-button number-char" t-att-data-action='widget.decimal_point'><t t-esc='widget.decimal_point'/></button>
-            <button class="input-button numpad-backspace" data-action='BACKSPACE' >
-                <img src="/point_of_sale/static/src/img/backspace.png" width="24" height="21" alt="Backspace"/>
-            </button>
-        </div>
+     
     </t>
 
     <t t-name="PaymentScreen-Paymentmethods">
@@ -542,36 +520,7 @@
                     <section class='payment-numpad'>
                     </section>
 
-                    <div class='payment-buttons'>
-                        <div class='button js_set_customer'>
-                            <i class='fa fa-user' role="img" aria-label="Customer" title="Customer"/>
-                            <span class='js_customer_name'>
-                                <t t-if="widget.pos.get_client()">
-                                    <t t-esc="widget.pos.get_client().name" />
-                                </t>
-                                <t t-if="!widget.pos.get_client()">
-                                    Customer
-                                </t>
-                            </span>
-                        </div>
-                        <t t-if='widget.pos.config.module_account'>
-                            <t t-if='widget.pos.get_order()'>
-                                <div t-attf-class='button js_invoice #{ widget.pos.get_order().is_to_invoice() ? "highlight" : ""} '>
-                                    <i class='fa fa-file-text-o' /> Invoice
-                                </div>
-                            </t>
-                        </t>
-                        <t t-if='widget.pos.config.tip_product_id'>
-                            <div class='button js_tip'>
-                                <i class='fa fa-heart' /> Tip
-                            </div>
-                        </t>
-                        <t t-if='widget.pos.config.iface_cashdrawer'>
-                            <div class='button js_cashdrawer'>
-                                <i class='fa fa-archive' /> Open Cashbox
-                            </div>
-                        </t>
-                     </div>
+                   
                  </div>
              </div>
          </div>
@@ -581,10 +530,6 @@
         <div class='receipt-screen screen'>
             <div class='screen-content'>
                 <div class='top-content'>
-                  <span class='button back'>
-                        <i class='fa fa-angle-double-left'></i>
-                        Powrót 
-                    </span>
                     <h1>Reszta: <span class='change-value'>0.00</span></h1>
                     <span class='button next'>
                         Next Order
