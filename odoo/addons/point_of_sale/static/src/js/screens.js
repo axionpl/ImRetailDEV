@@ -1877,6 +1877,7 @@ var PaymentScreenWidget = ScreenWidget.extend({
         this.pos.get_order().add_paymentline( cashregister );
         this.reset_input();
         this.render_paymentlines();
+        this.gui.show_screen('receipt');
     },
     render_paymentmethods: function() {
         var self = this;

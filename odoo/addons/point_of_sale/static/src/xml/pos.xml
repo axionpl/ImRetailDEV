@@ -481,7 +481,7 @@
      
     </t>
 
-    <t t-name="PaymentScreen-Paymentmethods">
+    <t t-name="PaymentScreen-Paymentmethods">             <!-- Przyciski zaplaty, karta Visa i gotowka-->
         <div class='paymentmethods'>
             <t t-foreach="widget.pos.cashregisters" t-as="cashregister">
                 <div class="button paymentmethod" t-att-data-id="cashregister.journal_id[0]">
