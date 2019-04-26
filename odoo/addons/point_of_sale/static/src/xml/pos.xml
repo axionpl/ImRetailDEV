@@ -501,10 +501,7 @@
                         Powrót
                     </span>
                     <h1>Płatności</h1>
-                    <span class='button next'>
-                        Potwierdzenie
-                        <i class='fa fa-angle-double-right'></i>
-                    </span>
+                  
                 </div>
                 <div class='left-content pc40 touch-scrollable scrollable-y'>
 
