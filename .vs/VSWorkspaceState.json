@@ -1,8 +1,21 @@
 {
   "ExpandedNodes": [
     "",
-    "\\odoo"
+    "\\odoo",
+    "\\odoo\\addons",
+    "\\odoo\\addons\\website_google_map",
+    "\\odoo\\addons\\website_google_map\\static",
+    "\\odoo\\addons\\website_google_map\\static\\src",
+    "\\odoo\\addons\\website_google_map\\static\\src\\css",
+    "\\odoo\\addons\\website_links",
+    "\\odoo\\addons\\website_links\\static",
+    "\\odoo\\addons\\website_links\\static\\src",
+    "\\odoo\\addons\\website_links\\static\\src\\css",
+    "\\odoo\\addons\\website_mail_channel",
+    "\\odoo\\addons\\website_mail_channel\\static",
+    "\\odoo\\addons\\website_mail_channel\\static\\src",
+    "\\odoo\\addons\\website_mail_channel\\static\\src\\css"
   ],
-  "SelectedNode": "\\odoo\\fields.py",
+  "SelectedNode": "\\odoo\\addons\\point_of_sale\\static\\src\\css\\pos.css",
   "PreviewInSolutionExplorer": false
 }

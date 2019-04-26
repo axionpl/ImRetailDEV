@@ -624,7 +624,7 @@ var OrderWidget = PosBaseWidget.extend({
         var taxes     = order ? total - order.get_total_without_tax() : 0;
 
         this.el.querySelector('.summary .total > .value').textContent = this.format_currency(total);
-        this.el.querySelector('.summary .total .subentry .value').textContent = this.format_currency(taxes);
+        
     },
     show_product_lot: function(orderline){
         this.pos.get_order().select_orderline(orderline);
@@ -1630,7 +1630,7 @@ var ReceiptScreenWidget = ScreenWidget.extend({
         this.pos.get_order().finalize();
     },
     click_back: function () {
-        this.gui.show_screen('products');
+        this.gui.show_screen('payment');
         // Placeholder method for ReceiptScreen extensions that
         // can go back ...
     },

@@ -230,6 +230,7 @@
                         <i class='fa fa-angle-double-left'></i>
                         Back
                     </span>
+
                     <h1 class='product-name'><t t-esc="widget.get_product_name()" /></h1>
                 </div>
                 <div class="centered-content">
@@ -1256,7 +1257,7 @@
                             <div class="line">
                                 <div class='entry total'>
                                     <span class="badge">Suma: </span> <span class="value">0.00 €</span>
-                                    <div class='subentry'>W tym VAT: <span class="value"></span></div>
+                                    
                                 </div>
                             </div>
                         </div>
